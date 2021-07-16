@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=PolicyKit Handler
+TryExec=heera-polkit-agent
+Exec=heera-polkit-agent
+NoDisplay=true

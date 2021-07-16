@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Exec=heera-session
+TryExec=heera-session
+Name=Heera Desktop
+Keywords=session
+Comment=session

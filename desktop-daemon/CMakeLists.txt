@@ -21,7 +21,7 @@ target_link_libraries(heera-desktop-daemon
 install(TARGETS heera-desktop-daemon RUNTIME DESTINATION /usr/bin)
 
 file(GLOB TS_FILES translations/*.ts)
-qt5_create_translation(QM_FILES ${TS_FILES})
+qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
 add_custom_target(desktop-translations DEPENDS ${QM_FILES} SOURCES ${TS_FILES})
 add_dependencies(heera-desktop-daemon desktop-translations)
 install(FILES ${QM_FILES} DESTINATION /usr/share/heera-desktop-daemon/translations)

@@ -173,25 +173,28 @@ void ThemeManager::setWallpaper(const QString &path)
 void ThemeManager::initGtkConfig()
 {
     QSettings settings(gtk3SettingsIniPath(), QSettings::IniFormat);
-    settings.clear();
-    settings.setIniCodec("UTF-8");
-    settings.beginGroup("Settings");
-    // font
-    settings.setValue("gtk-font-name", QString("%1 %2").arg(systemFont()).arg(systemFontPointSize()));
-    // dark mode
-    settings.setValue("gtk-application-prefer-dark-theme", isDarkMode());
-    // other
-    settings.setValue("gtk-enable-animations", true);
-    settings.sync();
-}
+        settings.clear();
+        settings.setIniCodec("UTF-8");
+        settings.beginGroup("Settings");
+        // font
+        settings.setValue("gtk-font-name", QString("%1 %2").arg(systemFont()).arg(systemFontPointSize()));
+        // dark mode
+        settings.setValue("gtk-application-prefer-dark-theme", isDarkMode());
+        // gtk icon theme
+        settings.setValue("gtk-icon-theme-name", "heera-icons");
+        // other
+        settings.setValue("gtk-enable-animations", true);
+        settings.sync();
+    }
+
 
 void ThemeManager::updateGtkFont()
 {
     QSettings settings(gtk3SettingsIniPath(), QSettings::IniFormat);
-    settings.setIniCodec("UTF-8");
-    settings.beginGroup("Settings");
-    settings.setValue("gtk-font-name", QString("%1 %2").arg(systemFont()).arg(systemFontPointSize()));
-    settings.sync();
+        settings.setIniCodec("UTF-8");
+        settings.beginGroup("Settings");
+        settings.setValue("gtk-font-name", QString("%1 %2").arg(systemFont()).arg(systemFontPointSize()));
+        settings.sync();
 }
 
 void ThemeManager::updateGtkDarkTheme()

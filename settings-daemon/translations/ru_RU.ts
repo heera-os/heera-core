@@ -45,6 +45,22 @@
     </message>
 </context>
 <context>
+    <name>Desktop</name>
+    <message>
+        <location filename="../../desktop-daemon/Desktop.qml" line="22"/>
+        <source>Change wallpaper</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>DesktopView</name>
+    <message>
+        <location filename="../../desktop-daemon/desktopview.cpp" line="13"/>
+        <source>Desktop</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>UPowerDevice</name>
     <message>
         <location filename="../battery/upowerdevice.cpp" line="71"/>
@@ -93,6 +109,44 @@
         <source>Unknown</source>
         <comment>battery technology</comment>
         <translation>Неизвестно</translation>
+    </message>
+</context>
+<context>
+    <name>main</name>
+    <message>
+        <location filename="../../polkit-agent/main.qml" line="62"/>
+        <source>Password</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../polkit-agent/main.qml" line="80"/>
+        <source>Done</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../polkit-agent/main.qml" line="87"/>
+        <source>Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../shutdown-ui/main.qml" line="47"/>
+        <source>Shutdown</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../shutdown-ui/main.qml" line="55"/>
+        <source>Reboot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../shutdown-ui/main.qml" line="63"/>
+        <source>Logout</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../shutdown-ui/main.qml" line="71"/>
+        <source>Suspend</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
